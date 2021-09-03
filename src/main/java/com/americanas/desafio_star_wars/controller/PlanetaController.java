@@ -14,7 +14,7 @@ public class PlanetaController {
 
     private PlanetaService planetaService;
 
-    @RequestMapping()
+    @GetMapping
     public List<Planeta> getAllPlanetas() {
         return planetaService.findAll();
     }
