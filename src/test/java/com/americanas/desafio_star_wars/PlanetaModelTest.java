@@ -12,7 +12,7 @@ public class PlanetaModelTest {
     public void criarPlanetaTest() {
 
         Planeta planeta = new Planeta();
-        planeta.setId(20);
+        planeta.setId("20");
         planeta.setNome("Planeta x");
         planeta.setClima("Clima y");
         planeta.setTerreno("Terreno x");

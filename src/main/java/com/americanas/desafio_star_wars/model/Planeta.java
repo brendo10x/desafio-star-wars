@@ -10,7 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Planeta {
 
     @Id
-    private Integer id;
+    private String id;
     private String nome;
     private String clima;
     private String terreno;

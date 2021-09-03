@@ -25,12 +25,12 @@ public class PlanetaController {
     }
 
     @GetMapping(value = "/{id}")
-    public Planeta getPlanetaById(@PathVariable("id") Integer id) {
+    public Planeta getPlanetaById(@PathVariable("id") String id) {
         return planetaService.findById(id);
     }
 
     @GetMapping(value = "/remover/{id}")
-    public List<Planeta> removePlanetaById(@PathVariable("id") Integer id) {
+    public List<Planeta> removePlanetaById(@PathVariable("id") String id) {
         planetaService.removePlaneta(id);
         return planetaService.findAll();
     }

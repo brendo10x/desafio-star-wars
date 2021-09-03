@@ -25,7 +25,7 @@ public class PlanetaServiceTest {
     @Ignore
     public void salvarPlanetaTest() {
         Planeta planeta = new Planeta();
-        planeta.setId(100);
+        planeta.setId("10");
         planeta.setNome("Brendo");
         planeta.setClima("Tete");
 

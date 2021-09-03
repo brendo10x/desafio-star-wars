@@ -40,14 +40,14 @@ public class PlanetaService {
                 }).collect(Collectors.toList());
     }
 
-    public Planeta findById(Integer id) {
+    public Planeta findById(String id) {
         return planetaRepository.findById(id).map(planeta -> {
             planeta.setQtdAparicoesEmFilmes(atualizaQdtAparicoesEmFilmes(planeta));
             return planeta;
         }).orElse(new Planeta());
     }
 
-    public void removePlaneta(Integer id) {
+    public void removePlaneta(String id) {
         planetaRepository.deleteById(id);
     }
 
