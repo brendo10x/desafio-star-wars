@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class PlanetaModelTest {
 
     @Test
-    public void criarPlaneta() {
+    public void criarPlanetaTest() {
 
         Planeta planeta = new Planeta();
         planeta.setId(20);
